@@ -167,3 +167,332 @@ Processing by DemoController#index as HTML
 Completed 200 OK in 3ms (Views: 1.7ms)
 
 
+Started GET "/index" for 127.0.0.1 at 2017-08-05 23:30:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/demo/index" for 127.0.0.1 at 2017-08-05 23:30:36 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 2.0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:30:37 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 1.5ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:34:00 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2017-08-05 23:34:09 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.6ms)
+
+
+Started GET "/demo/other_hello" for 127.0.0.1 at 2017-08-05 23:38:41 -0400
+Processing by DemoController#other_hello as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-05 23:38:41 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-05 23:39:24 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.2ms)
+Completed 200 OK in 2ms (Views: 1.8ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2017-08-05 23:39:27 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms)
+
+
+Started GET "/demo/other_hello" for 127.0.0.1 at 2017-08-05 23:39:36 -0400
+Processing by DemoController#other_hello as HTML
+Redirected to http://localhost:3000/demo/hello
+Completed 302 Found in 1ms
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:39:36 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (0.4ms)
+Completed 200 OK in 2ms (Views: 2.0ms)
+
+
+Started GET "/demo/lynda" for 127.0.0.1 at 2017-08-05 23:40:54 -0400
+Processing by DemoController#lynda as HTML
+Redirected to http://www.lynda.com
+Completed 302 Found in 0ms
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:44:25 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.7ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:44:51 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:45:36 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.4ms)
+Completed 200 OK in 2ms (Views: 1.7ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:48:29 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.6ms)
+Completed 200 OK in 2ms (Views: 1.9ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:48:40 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.4ms)
+Completed 200 OK in 2ms (Views: 1.9ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:48:41 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:49:24 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:52:49 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2017-08-05 23:57:07 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (0.7ms)
+Completed 200 OK in 3ms (Views: 2.2ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2017-08-05 23:57:30 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (0.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:58:16 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.5ms)
+Completed 200 OK in 2ms (Views: 2.1ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:58:18 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.5ms)
+Completed 200 OK in 2ms (Views: 2.0ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-05 23:59:00 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.7ms)
+Completed 200 OK in 2ms (Views: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-05 23:59:03 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (0.6ms)
+Completed 200 OK in 2ms (Views: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-06 00:00:12 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (0.6ms)
+Completed 200 OK in 2ms (Views: 2.1ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-06 00:00:14 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.8ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-06 00:00:15 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (0.6ms)
+Completed 200 OK in 2ms (Views: 2.2ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-06 00:00:15 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.8ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2017-08-06 00:02:19 -0400
+Processing by DemoController#hello as HTML
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.7ms)
+Completed 200 OK in 2ms (Views: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-06 00:02:23 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (0.7ms)
+Completed 200 OK in 2ms (Views: 2.0ms)
+
+
+Started GET "/demo/hello?id=20&page=5" for 127.0.0.1 at 2017-08-06 00:02:30 -0400
+Processing by DemoController#hello as HTML
+  Parameters: {"id"=>"20", "page"=>"5"}
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.7ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-06 00:03:20 -0400
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /Users/benscar/Desktop/Sites/simple_cms/config/routes.rb:9)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.2. (called from block in <top (required)> at /Users/benscar/Desktop/Sites/simple_cms/config/routes.rb:9)
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (1.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms)
+
+
+Started GET "/demo/hello/20?page=5" for 127.0.0.1 at 2017-08-06 00:03:21 -0400
+Processing by DemoController#hello as HTML
+  Parameters: {"page"=>"5", "id"=>"20"}
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.7ms)
+Completed 200 OK in 2ms (Views: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-06 00:05:50 -0400
+Processing by DemoController#index as HTML
+  Rendering demo/index.html.erb
+  Rendered demo/index.html.erb (1.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms)
+
+
+Started GET "/demo/hello?id=20&page=5" for 127.0.0.1 at 2017-08-06 00:05:56 -0400
+Processing by DemoController#hello as HTML
+  Parameters: {"id"=>"20", "page"=>"5"}
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.8ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+
+
+Started GET "/demo/hello?id=20&page=5" for 127.0.0.1 at 2017-08-06 00:06:28 -0400
+Processing by DemoController#hello as HTML
+  Parameters: {"id"=>"20", "page"=>"5"}
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (2.0ms)
+Completed 500 Internal Server Error in 4ms
+
+
+  
+ActionView::Template::Error (no implicit conversion of Integer into String):
+    16: ID: <%= @id %> <br />
+    17: ID: <%= params[:id] %><br />
+    18: Page: <%= @page %><br />
+    19: Next page: <%= @page +1 %>
+  
+app/views/demo/hello.html.erb:19:in `+'
+app/views/demo/hello.html.erb:19:in `_app_views_demo_hello_html_erb___4045120436819652025_70315323631180'
+app/controllers/demo_controller.rb:13:in `hello'
+Started GET "/demo/hello?id=20&page=5" for 127.0.0.1 at 2017-08-06 00:07:05 -0400
+Processing by DemoController#hello as HTML
+  Parameters: {"id"=>"20", "page"=>"5"}
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (1.9ms)
+Completed 500 Internal Server Error in 3ms
+
+
+  
+ActionView::Template::Error (no implicit conversion of Integer into String):
+    16: ID: <%= @id %> <br />
+    17: ID: <%= params[:id] %><br />
+    18: Page: <%= @page %><br />
+    19: Next page: <%= @page + 1 %><br />
+  
+app/views/demo/hello.html.erb:19:in `+'
+app/views/demo/hello.html.erb:19:in `_app_views_demo_hello_html_erb___4045120436819652025_70315315531200'
+app/controllers/demo_controller.rb:13:in `hello'
+Started GET "/demo/hello?id=20&page=5" for 127.0.0.1 at 2017-08-06 00:07:17 -0400
+Processing by DemoController#hello as HTML
+  Parameters: {"id"=>"20", "page"=>"5"}
+  Rendering demo/hello.html.erb
+  Rendered demo/hello.html.erb (0.8ms)
+Completed 200 OK in 3ms (Views: 2.3ms)
+
+
