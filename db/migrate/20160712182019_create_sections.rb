@@ -1,4 +1,5 @@
-class CreateSections < ActiveRecord::Migration[5.1]
+class CreateSections < ActiveRecord::Migration[5.0]
+
   def up
     create_table :sections do |t|
       t.integer "page_id"
@@ -13,6 +14,7 @@ class CreateSections < ActiveRecord::Migration[5.1]
   end
 
   def down
+    # don't need to drop indexes when dropping the whole table
     drop_table :sections
   end
 

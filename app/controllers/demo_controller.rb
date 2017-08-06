@@ -7,7 +7,7 @@ class DemoController < ApplicationController
   end
 
   def hello
-    @array = [1, 2, 3, 4, 5]
+    @array = [1,2,3,4,5]
     @id = params['id']
     @page = params[:page]
     render('hello')
@@ -18,6 +18,7 @@ class DemoController < ApplicationController
   end
 
   def lynda
-    redirect_to ('http://www.lynda.com')
+    redirect_to('http://lynda.com')
   end
+
 end
